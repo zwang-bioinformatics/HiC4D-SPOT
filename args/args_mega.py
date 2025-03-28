@@ -24,7 +24,7 @@ combinations = { # model, data, data_type
     7: ['Reed', 'Cohesinloss_Rao', 'default'],
 }
 
-select = 5
+select = 1
 model = combinations[select][0]
 data = combinations[select][1]
 data_type = combinations[select][2]
@@ -92,9 +92,6 @@ args = {
     'eval_loops': False, #True if data_type == 'loop_simulated' else False,
     'plot_hictracks': True,
     'plot_triangular': False,
-    
-    
-    
     
     'verbose': True,
 }

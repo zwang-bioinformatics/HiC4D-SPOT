@@ -101,8 +101,8 @@ if not args['memory_efficient']:
         hic_ano_combined_array.append(hic_ano_combined)
         
     # Generate Statistics
-    if args['data_type'] == 'time_swap':
-        generate_stats(hics_true, hics_true_perturbed, hics_pred, hics_ano, hics_ano_refed, hic_ano_combined_array, dir_out, model_name, filter_zeros = True, verbose=args['verbose'])
+    if args['data_type'] == 'time_swap' or args['data_type'] == 'default':
+        generate_stats(hics_true, hics_true_perturbed, hics_pred, hics_ano, hics_ano_refed, hic_ano_combined_array, dir_out, model_name, filter_zeros = False, data_type=args['data_type'], verbose=args['verbose'])
 
     # Save the HiC matrix in .cool format
     save_hic_as_cool(hics_true, num_bins=num_bins, bin_size=resolution, chromosome=chrid, dir_out=dir_out, output_filename=f"{model_name}_true", assembly=args['assembly'], verbose=args['verbose'])

@@ -211,7 +211,7 @@ def compute_metrics(hics_a, hics_b, comparison_name, filter_zeros=True, verbose=
     
     return df
 
-def generate_stats(hics_true, hics_true_perturbed, hics_pred, hics_ano, hics_ano_refed, hic_ano_combined_array, dir_out, model_name, filter_zeros=True, verbose=True):
+def generate_stats(hics_true, hics_true_perturbed, hics_pred, hics_ano, hics_ano_refed, hic_ano_combined_array, dir_out, model_name, filter_zeros=True, data_type='default', verbose=True):
     """
     Generate statistics for Hi-C matrix evaluation and export results to CSV.
 
@@ -245,7 +245,8 @@ def generate_stats(hics_true, hics_true_perturbed, hics_pred, hics_ano, hics_ano
     df_perturbed_pred.to_csv(os.path.join(dir_out, f"{model_name}_filter{filter_zeros}_perturbed_vs_pred.csv"), index=False)
     
     # plot the metrics
-    plot_metrics_bars(df_true_perturbed, model_name, filter_zeros, dir_out, "Original vs Time-swapped")
-    plot_metrics_bars(df_perturbed_pred, model_name, filter_zeros, dir_out, "Time-swapped vs Reconstructed")
+    if data_type == 'time_swap':
+        plot_metrics_bars(df_true_perturbed, model_name, filter_zeros, dir_out, "Original vs Time-swapped")
+        plot_metrics_bars(df_perturbed_pred, model_name, filter_zeros, dir_out, "Time-swapped vs Reconstructed")
     
     print(f"\n✅ Metrics saved in {dir_out}")

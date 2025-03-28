@@ -1,4 +1,4 @@
-# HiC4D-SPOT: Spatiotemporal Outlier Prediction Tool for Hi-C Data
+# HiC4D-SPOT: Spatiotemporal Outlier Detection Tool for Hi-C Data
 
 ![Architecture](graphical_abstract.png)
 
@@ -105,7 +105,7 @@ Download and place the datasets in the `data` directory using the following stru
 If you use **HiC4D-SPOT** in your research, please cite:
 
 ```
-Bishal Shrestha, Zheng Wang, HiC4D-SPOT: Spatiotemporal Outlier Detection Tool for Hi-C data.
+Bishal Shrestha, Zheng Wang, HiC4D-SPOT: Spatiotemporal Outlier Detection Tool for Hi-C Data.
 ```
 
 ---

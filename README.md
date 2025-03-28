@@ -114,7 +114,7 @@ Bishal Shrestha, Zheng Wang, HiC4D-SPOT: An Unsupervised Framework for Spatiotem
 
 For questions, suggestions, or issues, please contact:
 
-- **Zheng Wang**
+- **Zheng Wang, PhD**
 - University of Miami
 - Email: zheng.wang@miami.edu
 

@@ -105,7 +105,7 @@ Download and place the datasets in the `data` directory using the following stru
 If you use **HiC4D-SPOT** in your research, please cite:
 
 ```
-Bishal Shrestha, Zheng Wang, HiC4D-SPOT: Spatiotemporal Outlier Detection Tool for Hi-C Data.
+Bishal Shrestha, Zheng Wang, HiC4D-SPOT: a spatiotemporal outlier detection tool for Hi-C data, Briefings in Bioinformatics, Volume 26, Issue 4, July 2025, bbaf341, https://doi.org/10.1093/bib/bbaf341
 ```
 
 ---
